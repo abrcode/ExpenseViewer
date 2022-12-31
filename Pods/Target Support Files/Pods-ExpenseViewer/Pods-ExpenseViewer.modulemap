@@ -1,0 +1,6 @@
+framework module Pods_ExpenseViewer {
+  umbrella header "Pods-ExpenseViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_ExpenseViewerTests {
+  umbrella header "Pods-ExpenseViewerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
