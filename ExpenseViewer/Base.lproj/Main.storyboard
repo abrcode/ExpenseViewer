@@ -48,10 +48,10 @@
                                     <constraint firstItem="XT9-jB-N30" firstAttribute="centerY" secondItem="hPE-VA-7Ui" secondAttribute="centerY" id="zyZ-W1-TIz"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUV-MO-gY7">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUV-MO-gY7">
                                 <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1R-nw-3Jj">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1R-nw-3Jj" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="610.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQF-nF-Jgg">
@@ -70,13 +70,20 @@
                                                         <state key="normal" title="See All  " image="chevron.backward" catalog="system">
                                                             <color key="titleColor" name="Text"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="btnSeeAllClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="at7-bC-7b3"/>
+                                                        </connections>
                                                     </button>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Edc-Yq-IBs">
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Edc-Yq-IBs">
                                                         <rect key="frame" x="10" y="60.5" width="374" height="500"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="500" id="AtM-P6-047"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="cDE-4p-U2E"/>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="kZv-AL-SvH"/>
+                                                        </connections>
                                                     </tableView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -124,6 +131,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="uIe-qL-tpw"/>
+                    <connections>
+                        <outlet property="csHeightOfTableView" destination="AtM-P6-047" id="4QE-GS-Nvv"/>
+                        <outlet property="tblViewTransation" destination="Edc-Yq-IBs" id="FQk-TJ-CIv"/>
+                        <outlet property="viewLastFiveTransaction" destination="qQF-nF-Jgg" id="mTV-XM-Tai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

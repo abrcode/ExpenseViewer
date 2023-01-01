@@ -28,6 +28,7 @@
 		8209F68B2960646E0039620A /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209F6892960646E0039620A /* TransactionCell.swift */; };
 		8209F68C2960646E0039620A /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8209F68A2960646E0039620A /* TransactionCell.xib */; };
 		8209F68F296073FF0039620A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209F68E296073FF0039620A /* APIManager.swift */; };
+		8209F693296157DA0039620A /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209F692296157DA0039620A /* UIImageView.swift */; };
 		D1E958FA395244FDA297BFE1 /* Pods_ExpenseViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54CC0F1EF59419BE2EE7066 /* Pods_ExpenseViewerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		8209F6892960646E0039620A /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		8209F68A2960646E0039620A /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
 		8209F68E296073FF0039620A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8209F692296157DA0039620A /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		9D8DFD69EA75DA1C8E6A880F /* Pods-ExpenseViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseViewerTests.release.xcconfig"; path = "Target Support Files/Pods-ExpenseViewerTests/Pods-ExpenseViewerTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5D5CB59DF7272660D694B97 /* Pods-ExpenseViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseViewer.release.xcconfig"; path = "Target Support Files/Pods-ExpenseViewer/Pods-ExpenseViewer.release.xcconfig"; sourceTree = "<group>"; };
 		B785AB02C0C5774ED83DA9A9 /* Pods-ExpenseViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseViewer.debug.xcconfig"; path = "Target Support Files/Pods-ExpenseViewer/Pods-ExpenseViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				8209F68229605E790039620A /* Date.swift */,
 				8209F68429605FAC0039620A /* Utilities.swift */,
 				8209F686296060170039620A /* String.swift */,
+				8209F692296157DA0039620A /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				8209F68F296073FF0039620A /* APIManager.swift in Sources */,
 				8209F67D29600E3B0039620A /* TransactionModel.swift in Sources */,
 				8209F68B2960646E0039620A /* TransactionCell.swift in Sources */,
+				8209F693296157DA0039620A /* UIImageView.swift in Sources */,
 				8209F64A295FFE1F0039620A /* ViewController.swift in Sources */,
 				8209F687296060170039620A /* String.swift in Sources */,
 				8209F67A296006A90039620A /* Colors.swift in Sources */,

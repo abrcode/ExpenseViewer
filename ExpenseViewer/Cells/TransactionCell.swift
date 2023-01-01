@@ -20,12 +20,35 @@ class TransactionCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        self.loadView()
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func loadView(){
+        
+        self.imgViewTransaction.backgroundColor = .icon
+        self.imgViewTransaction.setRounded()
+        
+    }
+    
+    
+    func configueFiveTransaction(data : Transaction){
+        print("Data of current Cell : \(data)")
+        print("Merchant name :\(data.merchant)")
+        self.lblMerchantName.text = data.merchant
+        self.lblCategoryName.text = data.category
+
+        self.lblTransactionTime.text = data.dateParsed
+
+        self.lblTransactionAmount.text = "$\(data.signedAmount)"
+        
     }
     
 }
